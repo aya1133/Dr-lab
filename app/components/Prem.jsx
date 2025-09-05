@@ -10,7 +10,8 @@ export default function Prem() {
   const [hovered3, setHovered3] = useState(false);
   return (
     <Container>
-      <div className="!mt-[100px] flex flex-col justify-center text-center w-full h-full mb-[70px]">
+      <div dir="rtl">
+      <div className="!mt-[100px] flex flex-col  justify-center text-center w-full h-full mb-[70px]">
         <h1 className=" text-[#ffffff] font-[700] text-[23px] mb-[10px]">
           {" "}
           خطط الاشتراك في نظام Dr. Lab{" "}
@@ -19,7 +20,7 @@ export default function Prem() {
           اختر الخطة التي تناسب احتياجاتك{" "}
         </p>
       </div>
-      <div className=" flex gap-3 text-[#ffffff] justify-center w-fit items-stretch mb-[30px]">
+      <div className=" flex gap-3 max-md:flex-col text-[#ffffff] justify-center w-fit items-stretch mb-[30px]">
         <div className=" flex flex-col gap-4  h-full !justify-start bg-[#0D131E] !px-[50px] !py-6 rounded-[26px] border-1 border-[#1D232C] ">
           <h1 className="font-[700] text-[18px]">النسخة المجانية </h1>
           <p className="font-[200] text-[16px]">
@@ -30,7 +31,7 @@ export default function Prem() {
             <div className="absolute inset-0 flex items-center">
               <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-500 to-transparent"></div>
             </div>
-            <div className="absolute Z-[2] bg-[#262B34] right-15 text-[12px] font-light w-[100px] px-2 py-2 !text-center rounded-[10px]">
+            <div className="absolute Z-[2] bg-[#262B34] right-15 max-md:right-30 max-sm:right-16  text-[12px] font-light w-[100px] px-2 py-2 !text-center rounded-[10px]">
               {" "}
               ماذا تتضمن
             </div>
@@ -109,7 +110,7 @@ export default function Prem() {
         </div>
 
         <div className=" flex flex-row ">
-          <div className=" relative z-[1] flex flex-col gap-4  h-[650px] !justify-start bg-[#0D131E] px-[60px] py-12 pt-10 mt-[-20px] rounded-[26px] border-1 border-[#205cb6]">
+          <div className=" relative z-[1] flex flex-col gap-4  h-[650px] !justify-start bg-[#0D131E] px-[60px] py-12 pt-10 mt-[-20px] max-md:mt-[20px] max-md:mb-[20px]  rounded-[26px] border-1 border-[#205cb6]">
             <div className="absolute z-[2] left-[-20px] top-[-100px]">
               <img src="/prem.png" alt="dr-lab" />
             </div>
@@ -126,7 +127,7 @@ export default function Prem() {
             <div className="absolute inset-0 flex items-center">
               <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-500 to-transparent"></div>
             </div>
-            <div className="absolute Z-[2] bg-[#262B34] right-20  text-[12px] font-light w-[100px] px-2 py-2 !text-center rounded-[10px]">
+            <div className="absolute Z-[2] bg-[#262B34] right-20 max-sm:right-15 text-[12px] font-light w-[100px] px-2 py-2 !text-center rounded-[10px]">
               {" "}
               ماذا تتضمن
             </div>
@@ -220,7 +221,7 @@ export default function Prem() {
             <div className="absolute inset-0 flex items-center">
               <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-500 to-transparent"></div>
             </div>
-            <div className="absolute Z-[2] right-25 bg-[#262B34]   text-[12px] font-light w-[100px] px-4 py-2 !text-center rounded-[10px]">
+            <div className="absolute Z-[2] right-25 bg-[#262B34] max-md:right-33 max-sm:right-22  text-[12px] font-light w-[100px] px-4 py-2 !text-center rounded-[10px]">
               {" "}
               ماذا تتضمن
             </div>
@@ -299,6 +300,7 @@ export default function Prem() {
             </a>
           </div>
         </div>
+      </div>
       </div>
     </Container>
   );

@@ -3,13 +3,14 @@ import Container from "./Container";
 export default function Advans() {
   return (
     <Container>
-      <div className="flex flex-col justify-center text-center text-[60px] font-bold mt-[50px] ">
+      <div dir="rtl" >
+      <div className="flex flex-col justify-center text-center text-[60px] max-md:text-[30px] font-bold mt-[50px] ">
         <h1 className="text-[#F6F6F7]">ميزات قوية لمساعدتك في إدارة</h1>
         <h1 className="text-[#7E808F]"> جميع العملاء المحتملين لديك </h1>
       </div>
       <div className="flex flex-col gap-3 justify-center items-center">
-        <div className="flex flex-row mt-[40px] text-white w-full gap-3">
-          <div className="bg-[#151829] p-6 rounded-[16px] w-[30%]  hover:bg-[#0f1220] hover:text-white group hover:shadow-[inset_0_2px_2px_0_#7e28f685,inset_2px_0_0_0_#7e28f685] ">
+        <div className="flex flex-row mt-[40px] text-white w-full gap-3 max-md:flex-col">
+          <div className="bg-[#151829] p-6  rounded-[16px] w-[30%] max-md:w-[100%] hover:bg-[#0f1220] hover:text-white group hover:shadow-[inset_0_2px_2px_0_#7e28f685,inset_2px_0_0_0_#7e28f685] ">
             <div className="w-16 h-16 bg-transparent hover:bg-[#0f1220] rounded-2xl flex items-center justify-center ml-auto mb-4 group-hover:shadow-lg group-hover:shadow-[#7e28f6de]/50 transition-all duration-500">
             <img   src="/grid1.png" />
            </div>
@@ -21,7 +22,7 @@ export default function Advans() {
               مريض
             </p>
           </div>
-          <div className="bg-[#151829] p-6  rounded-[16px] w-[30%] hover:bg-[#0f1220] hover:text-white group hover:shadow-[inset_0_2px_2px_0_#7e28f685,inset_2px_0_0_0_#7e28f685]">
+          <div className="bg-[#151829] p-6  rounded-[16px] w-[30%] max-md:w-[100%] hover:bg-[#0f1220] hover:text-white group hover:shadow-[inset_0_2px_2px_0_#7e28f685,inset_2px_0_0_0_#7e28f685]">
              <div className="w-16 h-16 bg-transparent hover:bg-[#0f1220] rounded-2xl flex items-center justify-center ml-auto mb-4 group-hover:shadow-lg group-hover:shadow-[#7e28f6de]/50 transition-all duration-500">
             <img src="/grid2.png" />
             </div>
@@ -33,7 +34,7 @@ export default function Advans() {
               الحاجة.
             </p>
           </div>
-          <div className="bg-[#151829] p-6  rounded-[16px] w-[40%] hover:bg-[#0f1220] hover:text-white group hover:shadow-[inset_0_2px_2px_0_#7e28f685,inset_2px_0_0_0_#7e28f685] ">
+          <div className="bg-[#151829] p-6  rounded-[16px] w-[40%] max-md:w-[100%] hover:bg-[#0f1220] hover:text-white group hover:shadow-[inset_0_2px_2px_0_#7e28f685,inset_2px_0_0_0_#7e28f685] ">
              <div className="w-16 h-16 bg-transparent hover:bg-[#0f1220] rounded-2xl flex items-center justify-center ml-auto mb-4 group-hover:shadow-lg group-hover:shadow-[#7e28f6de]/50 transition-all duration-500">
             <img src="/grid3.png" />
             </div>
@@ -60,9 +61,9 @@ export default function Advans() {
               تخزين وإدارة معلومات المرضى الطبية و الشخصية في النظام.
             </p>
           </div>
-          <div className="bg-[#151829] p-6 rounded-[16px] row-span-2 hover:bg-[#0f1220] hover:text-white group hover:shadow-[inset_0_2px_2px_0_#7e28f685,inset_2px_0_0_0_#7e28f685]">
+          <div className="bg-[#151829] p-6 max-md:h-[350px] rounded-[16px] row-span-2 hover:bg-[#0f1220] hover:text-white group hover:shadow-[inset_0_2px_2px_0_#7e28f685,inset_2px_0_0_0_#7e28f685]">
              <div className="w-16 h-16 bg-transparent hover:bg-[#0f1220] rounded-2xl flex items-center justify-center ml-auto mb-4 group-hover:shadow-lg group-hover:shadow-[#7e28f6de]/50 transition-all duration-500">
-            <img src="/grid5.png" />
+            <img src="/grid5.png"  />
             </div>
             <h1 className="text-[20px] font-[700] !mt-8 mb-[5px]">
               {" "}
@@ -73,7 +74,7 @@ export default function Advans() {
             </p>
             <div className=" relative z-10">
                 <div className="absolute left-[-8] top-10 bg-[#c49aff9c]/20 blur-[50px] rounded-full group-hover:bg-[#c49aff9c]/60 transition-all duration-500 w-[170px] h-[170px] -translate-x-8 -translate-y-8"></div>
-            <img className="absolute left-[-8] top-5 " src="/grid5-2.png" />
+            <img className="absolute left-[-8] top-5 max-md:top-0 max-md:w-[150px]" src="/grid5-2.png" />
             </div>
             
           </div>
@@ -114,6 +115,7 @@ export default function Advans() {
             </p>
           </div>
         </div>
+      </div>
       </div>
     </Container>
   );
