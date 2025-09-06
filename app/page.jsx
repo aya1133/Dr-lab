@@ -15,11 +15,11 @@ import Footer from "./components/Footer";
 export default function Home() {
   return (
     <>
-      <div className=" z-0 bg-[#030915] w-full h-screen ">
+      <div className=" z-0 bg-[#030915] w-full h-screen overflow-x-hidden ">
         <Bgr className=" absolute z-[1] w-full h-screen" />
         <div className="absolute right-0 top-3/4 w-[650px] h-[650px] bg-[#C59CFF] rounded-full blur-[500px]" />
 
-        <div className="absolute inset-0 z-[2]">
+        <div className="absolute inset-0 z-[2] overflow-x-hidden ">
           <Container>
             <Navbar />
             <HeroSection />
